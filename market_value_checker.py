@@ -1,5 +1,6 @@
-import json
+# Made by Solax from the Toribash community for the community
 
+import json
 import hashlib
 import requests
 import time
