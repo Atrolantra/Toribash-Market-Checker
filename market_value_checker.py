@@ -39,22 +39,24 @@ def loginPart(theSession):
 
          
         token = theSession.get(BASE_URL + 'bank_ajax.php?bank_ajax=get_token').json()['token']
+        return token
     except KeyError:
         print "Failed to login. Please enter your details again."
         print
         loginPart(theSession)
-    return token
+    
 
 # Code to get the name of the user who's items we want to check
 def userCheckInput():
     try:
         user_check = raw_input("Enter the username of the user to check the inventory for: ")
         session.get("http://forum.toribash.com/tori_stats.php?username=" + user_check + "&format=json").json()
+        return user_check
     except ValueError:
         print "That user is not registered. Please try again."
         print
         userCheckInput()
-    return user_check
+    
 
 # Code to check how much our undercut value is
 def undercutFunct(store_price, stock, number_owned, cheapest_on_market):
