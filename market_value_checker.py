@@ -10,7 +10,7 @@ import datetime
 session = requests.Session()
 BASE_URL = 'http://forum.toribash.com/'
 
-tieout = 1.0
+timeout = 1.0
 
 # Gets the timestamp to be the name of our output file
 def timeStamped(fname, fmt='%Y-%m-%d-%H-%M-%S_{fname}'):
