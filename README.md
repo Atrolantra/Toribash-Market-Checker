@@ -7,3 +7,4 @@ Will need python to run. Then just follow directions in the terminal by entering
 For more info on Toribash API stuff: http://forum.toribash.com/showthread.php?t=444661
 
 Made by Solax from Toribash.
+[Some base used from here.](https://github.com/franciscouzo/set_item_prices)
